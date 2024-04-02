@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build dock') {
             when {
-                changeset "**/dock/*.*"
+                changeset "**/dock/*"
                 beforeAgent true
             }
             steps {
                 dir('dock') {
-                  sh 'docker-compose up'
+                 echo 'test'
                 }
             }
         }
