@@ -1,0 +1,10 @@
+version: "3"
+services:
+  dock:
+    container_name: dock
+    build:
+      context: .
+    restart: on-failure
+    ports:
+      - 3001:3000
+ 

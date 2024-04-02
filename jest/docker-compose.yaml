@@ -1,0 +1,10 @@
+version: "3"
+services:
+  jest:
+    container_name: jest
+    build:
+      context: .
+    restart: on-failure
+    ports:
+      - 3000:3000
+ 
