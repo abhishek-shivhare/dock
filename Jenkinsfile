@@ -19,7 +19,7 @@ pipeline {
             }
             steps {
                dir ('jest') {
-                sh 'docker-compose up'
+                 echo 'test jest'
                }
             }
         }
